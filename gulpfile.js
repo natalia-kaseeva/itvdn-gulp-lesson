@@ -137,7 +137,7 @@ gulp.task('watch', function() {
 	
 
 	// Слежение за PUG и сборка
-    watch('./src/pug/**/*.pug', gulp.parallel('pug'))
+    watch('./src/template/**/*.pug', gulp.parallel('pug'))
 
     // Слежение за JS
     watch('./src/js/**/*.*', gulp.parallel('js'))

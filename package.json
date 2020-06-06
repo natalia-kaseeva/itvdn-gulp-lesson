@@ -25,5 +25,9 @@
     "gulp-spritesmith": "0.0.2",
     "gulp-uglify-es": "^2.0.0",
     "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
   }
 }

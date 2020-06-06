@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+}
+
+.nav__link {
+    padding: 10px;
+    font-family: $ff-main-bold;
+    text-decoration: none;
+    text-transform: ucapitalize;
+    color: $color-grey;
+    transition: .3s;
+    font-size: 0.9rem;
+
+    &:hover,
+    &--active {
+        color:$color-red;
+    }
+
+    &:after {
+        content:'';
+        display: inline-block;
+        vertical-align: middle;
+        width: 5px;
+        height: 5px;
+        margin-left: 15px;
+        border-radius: 50%;
+        background: $color-grey;
+    }
+
+    &:last-child:after {
+        display: none;
+    }
+}
