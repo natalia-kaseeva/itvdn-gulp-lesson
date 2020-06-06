@@ -1,3 +1,5 @@
+include ../mixins/approach-card.pug
+
 section.approach
     .container
         .title.title--with-bottom-line
@@ -5,12 +7,9 @@ section.approach
             .title__text Check Our approches step by step ( how we do it )
 
         ul.approach__list
-            li.approach__item
-                .approach__image
-                    img.approach__picture(src="../img/step-1.jpg" alt="picture")
-                    .approach__step step
-                .approach__text
-                    .approach__title Step 1 : Heading Here
-                    p.approach__description.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.  
+            +approach-card('step-1.jpg','Step 1 : Heading Here','Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.')
+            +approach-card('step-2.jpg','Step 2 : Heading Here','Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.')
+            +approach-card('step-3.jpg','Step 3 : Heading Here','Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.')
+            +approach-card('step-4.jpg','Step 4 : Heading Here','Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.')
+            
+            
