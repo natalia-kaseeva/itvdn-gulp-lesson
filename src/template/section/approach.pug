@@ -1,10 +1,9 @@
 include ../mixins/approach-card.pug
+include ../mixins/title.pug
 
 section.approach
     .container
-        .title.title--with-bottom-line
-            h2.title__header Our Approach
-            .title__text Check Our approches step by step ( how we do it )
+        +title('Our Approach','Check Our approches step by step ( how we do it )')
 
         ul.approach__list
             +approach-card('step-1.jpg','Step 1 : Heading Here','Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.')

@@ -1,0 +1,12 @@
+include ../mixins/work-card.pug
+include ../mixins/title.pug
+
+section.work
+    .container
+        +title('Our Work','We are added our featured works below')
+
+        ul.work__list
+            +work-card('work-1.jpg','Project Name','Facebook marketing')
+            +work-card('work-2.jpg','Project Name','Landing page')
+            +work-card-reverse('work-3.jpg','Project Name','Facebook marketing')
+            +work-card-reverse('work-4.jpg','Project Name','Landing page')

@@ -1,0 +1,13 @@
+mixin work-card(imgsrc,title,description)
+    li.work__item.work__item--name
+        .work__name=name
+        .work__description=description
+    li.work__item: img.work__picture(src="img/" + imgsrc, alt="picture")
+
+mixin work-card-reverse(imgsrc,title,description)
+    li.work__item: img.work__picture(src="img/" + imgsrc, alt="picture")
+    
+    li.work__item.work__item--name
+        .work__name=name
+        .work__description=description
+    
