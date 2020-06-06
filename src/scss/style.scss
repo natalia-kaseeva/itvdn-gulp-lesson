@@ -6,9 +6,13 @@
 @import "global/common";
 @import "global/fonts.scss";
 @import "global/mixins/mixins.scss";
+@import "global/sprite";
+@import "global/icons";
 @import "global/button";
 
 @import "section/header.scss";
 @import "section/contact";
 @import "section/nav";
 @import "section/hero";
+@import "section/title";
+@import "section/about";

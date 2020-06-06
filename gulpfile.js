@@ -12,8 +12,8 @@ const del = require('del');
 const group_media = require('gulp-group-css-media-queries');
 const clean_css = require('gulp-clean-css');
 const rename = require('gulp-rename');
+const spritesmith = require('gulp.spritesmith');
 const uglify = require('gulp-uglify-es').default;
-const spritesmith = require('gulp-spritesmith');
 
 // Таск для сборки Gulp файлов
 gulp.task('pug', function(callback) {
@@ -115,13 +115,13 @@ gulp.task('copy:fonts', function(callback) {
 
 /* ------------ Sprite ------------- */
 gulp.task('sprite', function(cb) {
-    const spriteData = gulp.src('source/img/icons/*.png').pipe(spritesmith({
+    const spriteData = gulp.src('src/img/icons/*.png').pipe(spritesmith({
       imgName: 'sprite.png',
       imgPath: '../img/sprite.png',
       cssName: 'sprite.scss'
     }));
   
-    spriteData.img.pipe(gulp.dest('build/img/'));
+    spriteData.img.pipe(gulp.dest('src/img/'));
     spriteData.css.pipe(gulp.dest('src/scss/global/'));
     cb();
   });
